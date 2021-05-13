@@ -5,27 +5,21 @@ using namespace std;
 //Simplifies __m128 operations
 struct fourValues {
 	float a, b, c, d;
-	fourValues(float setA, float setB, float setC, float setD) {
-		a = setA;
-		b = setB;
-		c = setC;
-		d = setD;
-	}
+	fourValues(float setA, float setB, float setC, float setD) : a(setA), b(setB), c(setC), d(setD) {}
 };
 
 //Simplifies __m256 operations
 struct eightValues {
 	float a, b, c, d, e, f, g, h;
-	eightValues(float setA, float setB, float setC, float setD, float setE, float setF, float setG, float setH) {
-		a = setA;
-		b = setB;
-		c = setC;
-		d = setD;
-		e = setE;
-		f = setF;
-		g = setG;
-		h = setH;
-	}
+	eightValues(float setA, float setB, float setC, float setD, float setE, float setF, float setG, float setH) : 
+		a(setA), 
+		b(setB), 
+		c(setC), 
+		d(setD),
+		e(setE),
+		f(setF),
+		g(setG),
+		h(setH) {}
 };
 
 //Function to add 2 floats 8 times simultaneously
